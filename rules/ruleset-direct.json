@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "apple.com",
+        "icloud.com",
+        "mzstatic.com",
+        "cdn-apple.com",
+        "steampowered.com",
+        "steamstatic.com",
+        "steamcontent.com",
+        "cn"
+      ]
+    }
+  ]
+}
