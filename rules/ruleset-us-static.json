@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "redpocket.com",
+        "redpocketmobile.com",
+        "3gppnetwork.org"
+      ]
+    }
+  ]
+}
