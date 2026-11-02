@@ -1,5 +1,5 @@
 {
-  "_comment": "NekoBox 瘦版自定义配置 v3（社区全量 + 私人小规则）：私人 6 集（aizizi77/nekobox-rules，每天自维护）优先匹配，其后是 KaringX/karing-ruleset 官方社区集（分类全量覆盖，每天自动拉取更新），最后是 v2 原有的 geosite/geoip cn 直连收尾。节点名与 v2 完全一致，未改动、未换节点；选哪个节点仍由你在 NekoBox 里定。链式代理仍在 NekoBox 界面里配，不要在这里重写。贴到 NekoBox → 设置 → 自定义配置（替换掉旧版）。",
+  "_comment": "NekoBox 瘦版自定义配置 v3（线路组版）：私人 6 集（aizizi77/nekobox-rules）优先匹配，其后是 KaringX/karing-ruleset 官方社区集，最后是 geosite/geoip cn 直连收尾。本文件不含任何具体节点名：规则出站只写 5 条线路名（美静态线、美国线、香港线、台湾线、日本线），线路名对应 NekoBox 里 selector 模式分组中同名的配置，组里放哪个节点、换哪个节点都在 App 里由你定，换订阅也不用改本文件（前置设置见 README）。链式代理仍在 NekoBox 界面里配，不要在这里重写。贴到 NekoBox → 设置 → 自定义配置（替换掉旧版）。",
   "route": {
     "+rule_set": [
       {
@@ -237,23 +237,23 @@
     ],
     "+rules": [
       {
-        "outbound": "美静态",
+        "outbound": "美静态线",
         "rule_set": "ruleset-us-static"
       },
       {
-        "outbound": "US 22 NTT x1.0",
+        "outbound": "美国线",
         "rule_set": "ruleset-us"
       },
       {
-        "outbound": "TW 21 Hinet x1.0",
+        "outbound": "台湾线",
         "rule_set": "ruleset-tw"
       },
       {
-        "outbound": "HK 14 家宽 x1.0",
+        "outbound": "香港线",
         "rule_set": "ruleset-hk"
       },
       {
-        "outbound": "JP 22 GMO x1.0",
+        "outbound": "日本线",
         "rule_set": "ruleset-jp"
       },
       {
@@ -268,7 +268,7 @@
         ]
       },
       {
-        "outbound": "US 22 NTT x1.0",
+        "outbound": "美国线",
         "rule_set": [
           "com-google",
           "com-ai",
@@ -282,7 +282,7 @@
         ]
       },
       {
-        "outbound": "HK 14 家宽 x1.0",
+        "outbound": "香港线",
         "rule_set": [
           "com-youtube",
           "com-github",
@@ -292,14 +292,14 @@
         ]
       },
       {
-        "outbound": "TW 21 Hinet x1.0",
+        "outbound": "台湾线",
         "rule_set": [
           "com-binance",
           "com-okx"
         ]
       },
       {
-        "outbound": "JP 22 GMO x1.0",
+        "outbound": "日本线",
         "rule_set": [
           "com-whatsapp"
         ]
