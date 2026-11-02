@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "clubsim.com",
+        "clubsim.hk",
+        "youtube.com",
+        "googlevideo.com",
+        "youtu.be",
+        "github.com",
+        "githubusercontent.com",
+        "githubassets.com",
+        "cloudflare.com",
+        "cloudflareinsights.com",
+        "telegram.org",
+        "t.me",
+        "telegram.me",
+        "douyin.com",
+        "iesdouyin.com",
+        "snssdk.com",
+        "byteoversea.com"
+      ]
+    }
+  ]
+}
