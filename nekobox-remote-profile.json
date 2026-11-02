@@ -1,0 +1,89 @@
+{
+  "_comment": "NekoBox 瘦版自定义配置：分流名单改为远程 rule-set 拉取。用前把下面 6 处 url 里的 已填 GitHub raw 地址。贴到 NekoBox → 设置 → 自定义配置（替换掉 v2 那份）。节点名与 v2 完全一致，未改动；链式代理仍在 NekoBox 界面里配，不要在这里重写。规则明细托管在 rules/ 下的 6 个 JSON，改名单只需改托管端，手机端每天自动拉一次（update_interval 1d），也可重启 NekoBox 立即生效。",
+  "route": {
+    "+rule_set": [
+      {
+        "download_detour": "direct",
+        "format": "source",
+        "tag": "ruleset-us-static",
+        "type": "remote",
+        "update_interval": "1d",
+        "url": "https://raw.githubusercontent.com/aizizi77/nekobox-rules/main/rules/ruleset-us-static.json"
+      },
+      {
+        "download_detour": "direct",
+        "format": "source",
+        "tag": "ruleset-us",
+        "type": "remote",
+        "update_interval": "1d",
+        "url": "https://raw.githubusercontent.com/aizizi77/nekobox-rules/main/rules/ruleset-us.json"
+      },
+      {
+        "download_detour": "direct",
+        "format": "source",
+        "tag": "ruleset-tw",
+        "type": "remote",
+        "update_interval": "1d",
+        "url": "https://raw.githubusercontent.com/aizizi77/nekobox-rules/main/rules/ruleset-tw.json"
+      },
+      {
+        "download_detour": "direct",
+        "format": "source",
+        "tag": "ruleset-hk",
+        "type": "remote",
+        "update_interval": "1d",
+        "url": "https://raw.githubusercontent.com/aizizi77/nekobox-rules/main/rules/ruleset-hk.json"
+      },
+      {
+        "download_detour": "direct",
+        "format": "source",
+        "tag": "ruleset-jp",
+        "type": "remote",
+        "update_interval": "1d",
+        "url": "https://raw.githubusercontent.com/aizizi77/nekobox-rules/main/rules/ruleset-jp.json"
+      },
+      {
+        "download_detour": "direct",
+        "format": "source",
+        "tag": "ruleset-direct",
+        "type": "remote",
+        "update_interval": "1d",
+        "url": "https://raw.githubusercontent.com/aizizi77/nekobox-rules/main/rules/ruleset-direct.json"
+      }
+    ],
+    "+rules": [
+      {
+        "outbound": "美静态",
+        "rule_set": "ruleset-us-static"
+      },
+      {
+        "outbound": "US 22 NTT x1.0",
+        "rule_set": "ruleset-us"
+      },
+      {
+        "outbound": "TW 21 Hinet x1.0",
+        "rule_set": "ruleset-tw"
+      },
+      {
+        "outbound": "HK 14 家宽 x1.0",
+        "rule_set": "ruleset-hk"
+      },
+      {
+        "outbound": "JP 22 GMO x1.0",
+        "rule_set": "ruleset-jp"
+      },
+      {
+        "outbound": "direct",
+        "rule_set": "ruleset-direct"
+      },
+      {
+        "geosite": "cn",
+        "outbound": "direct"
+      },
+      {
+        "geoip": "cn",
+        "outbound": "direct"
+      }
+    ]
+  }
+}
