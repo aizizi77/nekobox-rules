@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "binance.com",
+        "binance.us",
+        "bnbstatic.com"
+      ]
+    }
+  ]
+}
