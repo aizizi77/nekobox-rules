@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "whatsapp.com",
+        "whatsapp.net"
+      ]
+    }
+  ]
+}
